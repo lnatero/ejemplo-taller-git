@@ -1,8 +1,9 @@
 import random  # importamos libreria random casos 'aleatorios'
 import os  # importamos libreria para interactuar con archivos
+from constantes import bienvenida, despedida
 
 
-print()
+print(bienvenida)
 
 # Usamos la libreria os para obtener la lista de archivos dentro de la carpeta fotos
 lista_de_fotos = os.listdir("fotos")
@@ -23,4 +24,4 @@ ruta_foto = os.path.join("fotos",foto_aleatoria)
 # Usamos la liberia os para abrir la foto seleccionada
 os.startfile(ruta_foto)
 
-print()
+print(despedida)
